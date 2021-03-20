@@ -22,7 +22,6 @@
 from matplotlib import pyplot as plt
 import numpy as np
 from pylab import *
-#import sys
 import argparse
 
 # Use argparse to parse command line arguments. 

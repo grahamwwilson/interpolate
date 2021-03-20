@@ -1,0 +1,84 @@
+Examples of usage.
+
+graham:interpolate$ python TimeOfEnergyValue.py -h
+usage: TimeOfEnergyValue.py [-h] [-f FILE] [-e EVALUE]
+
+Calculator for Time of Energy Value
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -f FILE, --file FILE  input data file name
+  -e EVALUE, --evalue EVALUE
+                        Energy value (%)
+
+graham:interpolate$ python TimeOfEnergyValue.py
+Namespace(evalue=10.0, file='Oscillations.dat')
+file     = Oscillations.dat
+evalue   = 10.0
+Found straddling points,  83747 98.7769636336838 10.000025193880575
+Found straddling points,  83748 98.77813597855784 9.999541417349098
+Averaged estimate for t(s)= 98.77754980612082 with Eave(%)= 9.999783305614837
+Gradient estimate (%/s) = -0.41265718150938485
+-------------------------------------------------------------------------------------
+Estimated time at evalue(%) = 10.0 using linear interpolation is 98.77702468649399 s
+-------------------------------------------------------------------------------------
+
+graham:interpolate$ python TimeOfEnergyValue.py -f Oscillations2.dat
+Namespace(evalue=10.0, file='Oscillations2.dat')
+file     = Oscillations2.dat
+evalue   = 10.0
+Found straddling points,  128712 151.6601264054836 10.000179050478492
+Found straddling points,  128713 151.6612987208728 9.999929196861263
+Averaged estimate for t(s)= 151.6607125631782 with Eave(%)= 10.000054123669877
+Gradient estimate (%/s) = -0.2131283266694903 
+-------------------------------------------------------------------------------------
+Estimated time at evalue(%) = 10.0 using linear interpolation is 151.66096651191754 s
+-------------------------------------------------------------------------------------
+
+graham:interpolate$ python TimeOfEnergyValue.py -f Oscillations2.dat.gz
+Namespace(evalue=10.0, file='Oscillations2.dat.gz')
+file     = Oscillations2.dat.gz
+evalue   = 10.0
+Found straddling points,  128712 151.6601264054836 10.000179050478492
+Found straddling points,  128713 151.6612987208728 9.999929196861263
+Averaged estimate for t(s)= 151.6607125631782 with Eave(%)= 10.000054123669877
+Gradient estimate (%/s) = -0.2131283266694903
+-------------------------------------------------------------------------------------
+Estimated time at evalue(%) = 10.0 using linear interpolation is 151.66096651191754 s
+-------------------------------------------------------------------------------------
+
+graham:interpolate$ python TimeOfEnergyValue.py -e 50.0
+Namespace(evalue=50.0, file='Oscillations.dat')
+file     = Oscillations.dat
+evalue   = 50.0
+Found straddling points,  21760 25.875133548263506 50.00079882832462
+Found straddling points,  21761 25.876316746865516 49.997665879300804
+Averaged estimate for t(s)= 25.87572514756451 with Eave(%)= 49.999232353812715
+Gradient estimate (%/s) = -2.6478640343990785 
+-------------------------------------------------------------------------------------
+Estimated time at evalue(%) = 50.0 using linear interpolation is 25.875435236082154 s
+-------------------------------------------------------------------------------------
+
+graham:interpolate$ python TimeOfEnergyValue.py --evalue 40.0
+Namespace(evalue=40.0, file='Oscillations.dat')
+file     = Oscillations.dat
+evalue   = 40.0
+Found straddling points,  29388 34.888904299421505 40.000553429336954
+Found straddling points,  29389 34.89008463591444 39.99982114168947
+Averaged estimate for t(s)= 34.88949446766797 with Eave(%)= 40.00018728551321
+Gradient estimate (%/s) = -0.6204058349992194
+-------------------------------------------------------------------------------------
+Estimated time at evalue(%) = 40.0 using linear interpolation is 34.88979634347675 s
+-------------------------------------------------------------------------------------
+
+graham:interpolate$ python TimeOfEnergyValue.py --evalue 40.0 -f Oscillations2.dat
+Namespace(evalue=40.0, file='Oscillations2.dat')
+file     = Oscillations2.dat
+evalue   = 40.0
+Found straddling points,  36098 42.83964957755366 40.00008097950796
+Found straddling points,  36099 42.840829757059375 39.999595869314184
+Averaged estimate for t(s)= 42.84023966730652 with Eave(%)= 39.999838424411074
+Gradient estimate (%/s) = -0.4110478036849501
+-------------------------------------------------------------------------------------
+Estimated time at evalue(%) = 40.0 using linear interpolation is 42.839846585072586 s
+-------------------------------------------------------------------------------------

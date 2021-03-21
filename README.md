@@ -1,15 +1,13 @@
 # interpolate
-estimate time at specific energy using linear interpolation
-
-This code is pretty straightforward.
+Estimate time at specific energy using linear interpolation
  
 ## 1. Data formats
-   It reads in columns from our Oscillations data file and estimates 
-   the time at which the energy percentage is a specified value based on 
-   linear interpolation.
+   The program reads in columns from the Oscillations data file and 
+   estimates the time at which the energy percentage is a specified 
+   value based on linear interpolation.
 
-   The default input file is specified as Oscillations.dat (works for both 
-   compressed and uncompressed files). The file can also be 
+   The default input file is specified as Oscillations.dat (works for 
+   both compressed and uncompressed files). The file can also be 
    compressed (to save space). 
 
    The supplied files are compressed and named, 
@@ -19,7 +17,6 @@ This code is pretty straightforward.
    ie. less Oscillations.dat.gz
    or uncompress it
    gunzip Oscillations.dat.gz (results in file Oscillations.dat)
-
    To compress again,  gzip Oscillations.dat
 
 ## 2. argparse
@@ -30,9 +27,9 @@ This code is pretty straightforward.
    python TimeOfEnergyValue.py -h
 
    If you do not have argparse installed you will need to install it.
-   pip3 install argparse for python3.
+   For python3,
+   pip3 install argparse
 
 ## 3. Examples
    Some examples are included in Example_Output.txt illustrating 
    results with different arguments on the two supplied files.
-

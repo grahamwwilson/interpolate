@@ -1,9 +1,12 @@
 # interpolate
+TimeOfEnergyValue.py
+
 Estimate time at specific energy using linear interpolation
  
 ## 1. Data formats
-   The program reads in columns from the Oscillations data file and 
-   estimates the time at which the energy percentage is a specified 
+   The TimeOfEnergyValue.py program reads in columns from the 
+   Oscillations data file and estimates the time at which the 
+   energy percentage is a specified 
    value based on linear interpolation.
 
    The default input file is specified as Oscillations.dat (works for 
